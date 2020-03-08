@@ -24,13 +24,13 @@ startQuiz.addEventListener("click", function (event) {
 });
 
 function showQs() {
-    var question = quizQs[currentIndex];
+    var question = questions[currentIndex];
 
     document.querySelector("#title").innerHTML = question.title;
-    document.querySelector("#chA").innerHTML = question.choices[0];
-    document.querySelector("#chB").innerHTML = question.choices[1];
-    document.querySelector("#chC").innerHTML = question.choices[2];
-    document.querySelector("#chD").innerHTML = question.choices[3];
+    document.querySelector("#boxA").innerHTML = question.choices[0];
+    document.querySelector("#boxB").innerHTML = question.choices[1];
+    document.querySelector("#boxC").innerHTML = question.choices[2];
+    document.querySelector("#boxD").innerHTML = question.choices[3];
 }
 
 for (var i = 0; i < quizBtn.length; i++) {
@@ -39,7 +39,7 @@ for (var i = 0; i < quizBtn.length; i++) {
 
 
 
-        if (event.currentTarget.innerText === quizQs[currentIndex].answer) {
+        if (event.currentTarget.innerText === questions[currentIndex].answer) {
             score++;
             console.log(score);
 
@@ -47,7 +47,7 @@ for (var i = 0; i < quizBtn.length; i++) {
         } else {
 
             document.querySelector("#checkAns").innerHTML = "wrong";
-            secondsLeft = secondsLeft - 15;
+            secondsLeft = secondsLeft - 10;
         }
         console.log("Current Index before ++" + currentIndex);
 

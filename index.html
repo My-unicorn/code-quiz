@@ -33,7 +33,7 @@
 
 
                 <div class="countdownBox">
-                    <p>Count Down: <span id="counterDisplay"></span></p>
+                    <p>Time Remaining: <span id="counterDisplay"></span></p>
                 </div>
             </div>
         </nav>
@@ -48,20 +48,17 @@
             <div id="boxOne">
                 <h3>Coding Quiz</h3>
 
-                <p>You will have 90 seconds to answer 5 questions.</p>
-                <p>If you guess wrong then 15 seconds will be deducted from the timer!</p>
-                <p>Are you ready? Press Start!!</p>
-
+                <p>Answer 5 questions before the timer runs out! Each wrong answer will subtract 10 seconds from the timer. The more time left on the clock when all questions are answered, the higher your score!</p>
                 <button id="startQuiz">Start Here!</button>
             </div>
 
 
             <div id="boxTwo" class="startHidden">
                 <h3 id="title"></h3>
-                <button id="chA" class="quizBtn"></button>
-                <button id="chB" class="quizBtn"></button>
-                <button id="chC" class="quizBtn"></button>
-                <button id="chD" class="quizBtn"></button>
+                <button id="boxA" class="quizBtn"></button>
+                <button id="boxB" class="quizBtn"></button>
+                <button id="boxC" class="quizBtn"></button>
+                <button id="boxD" class="quizBtn"></button>
                 <p id="checkAns"></p>
             </div>
 
@@ -75,7 +72,7 @@
             <div id="boxFour" class="startHidden">
                 <h3 id="endMsg"></h3>
                 <h4 id="yourScore"></h4>
-                <p>Enter your initials for the leaderboard:</p>
+                <p>Enter your initials:</p>
                 <form>
                     <input type="text" id="userName">
 
@@ -100,7 +97,7 @@
 
     <script src="script.js"></script>
     <script src="timer.js"></script>
-    <script src="quizQu.js"></script>
+    <script src="questions.js"></script>
 
 </body>
 

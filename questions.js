@@ -1,4 +1,4 @@
-var quizQs = [
+var questions = [
     {
         title: "Question 1: Which of the following functions of Number object would display output in exponential format: ",
         choices: ["toPrecision()", "toFixed()", "toExponential()", "toLocaleString()"],

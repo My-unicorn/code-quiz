@@ -5,7 +5,7 @@ var yourScore = document.querySelector("#yourScore");
 
 var highscores = JSON.parse(localStorage.getItem("highscores")) || [];
 var submitBtn = document.querySelector("#submitNameScore");
-var secondsLeft = 91;
+var secondsLeft = 61;
 
 function startTimer() {
 
